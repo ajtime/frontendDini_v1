@@ -1,0 +1,12 @@
+extends layouts/default
+
+append mainVars
+    - currentPage = 'main'
+    - pageTitle = 'New Site'
+    - metaDesc = 'New Site'
+    - pageClass = 'main'
+    - location = 'main'
+
+block content
+    
+    include pages/main

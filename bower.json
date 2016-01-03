@@ -1,0 +1,22 @@
+{
+  "name": "default_package_v2",
+  "private": true,
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.3",
+    "slick.js": "~1.5.5",
+    "susy": "~2.2.5",
+    "include-media": "~1.4.1",
+    "magnific-popup": "~1.0.0"
+  }
+}
