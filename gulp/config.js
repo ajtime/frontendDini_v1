@@ -3,6 +3,7 @@ var src = 'src',
     proxyaddress = 'http://tropicana.drpixel.net/',
     sfdest = '../../',
     babelify = require('babelify'),
+    //react = require('react'),
     bowerPath = 'bower_components'
 
 module.exports = {
@@ -24,11 +25,14 @@ module.exports = {
     insertGlobals : true,
     debug: false,
     //entries:    src + '/javascript/main.js',
-    entries:    './src/javascript/main.js',
+    //entries:    './src/javascript/main.js',
+    entries:    './src/javascript/main.jsx',
     dest:       './build/assets/js',
     outputName: 'main.js',
     transform: [
       [babelify, {
+        presets: "react",
+        //presets: [react],
         ignore: "**/bower_components/**"
       }]
     ],

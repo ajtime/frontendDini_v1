@@ -1,35 +1,32 @@
 {
   "name": "default_package_v2",
   "version": "1.0.0",
-  "description": "For later use",
-  "private": true,
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "watchify src/javascript/main.jsx -v -t [ babelify --presets [ react ] ] -o build/assets/js/mainaj.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "vml",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajtime/frontendDini_v1.git"
+  },
+  "author": "ajtime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajtime/frontendDini_v1/issues"
+  },
   "browser": {
     "modernizr": "./bower_components/modernizr/modernizr.js",
     "jquery": "./bower_components/jquery/dist/jquery.js",
     "slick.js": "./bower_components/slick.js/slick/slick.js",
     "magnific": "./bower_components/magnific-popup/dist/jquery.magnific-popup.js"
   },
-  "browserify-shim": {
-    "modernizr": "Modernizr",
-    "jquery": "$",
-    "slick.js": "slick",
-    "magnific": "magnific"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "devDependencies": {
+  "dependencies": {
     "babel-preset-react": "^6.3.13",
-    "babelify": "^6.3.0",
+    "babelify": "^7.2.0",
     "browser-sync": "^2.8.0",
-    "browserify": "^6.1.0",
+    "browserify": "^12.0.1",
     "browserify-shim": "^3.8.0",
     "del": "^1.2.0",
     "gulp": "^3.9.0",
@@ -56,11 +53,14 @@
     "lodash.assign": "^3.2.0",
     "merge-stream": "^0.1.5",
     "pretty-hrtime": "^0.2.2",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.0.1",
     "serve-static": "^1.10.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.0.0",
-    "watchify": "^2.0.0"
-  }
+    "watchify": "^3.6.1"
+  },
+  "homepage": "https://github.com/ajtime/frontendDini_v1#readme"
 }
