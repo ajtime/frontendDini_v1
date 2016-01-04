@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "watchify src/javascript/main.jsx -v -t [ babelify --presets [ react ] ] -o build/assets/js/mainaj.js",
+    "start": "watchify src/javascript/main.jsx -v -t [ babelify --presets [ react ] ] -o build/assets/js/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
