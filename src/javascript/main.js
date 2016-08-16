@@ -13,7 +13,7 @@ on buildpackage v2.`;
 console.log(es6Text);
 //end es6 test
 
-console.log("big bacon COOKE");
+console.log("dwarves");
 
 
 $(function() {
